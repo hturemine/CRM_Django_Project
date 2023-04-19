@@ -8,6 +8,17 @@
     
         <h1>hturemine</h1>
 
+        {%if records %}
+            {% for record in records %}
+                {{record.first_Name}}
+                {{record.last_Name}}
+                {{record.email}}
+                {{record.phone}}
+                {{record.created_at}}
+                <br>
+            {% endfor %}
+        {% endif %}
+
     {% else %}
 
         <br>
